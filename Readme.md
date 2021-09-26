@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Tilegen Bakitov](https://up.htmlacademy.ru/htmlcss/32/user/996491).
-* Наставник: `Неизвестно`.
+* Наставник: [Ivan Konderev](https://htmlacademy.ru/profile/id1033347).
 
 ---
 
