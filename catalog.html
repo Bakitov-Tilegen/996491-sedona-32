@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header>
+    <h1 class="visually-hidden">Мы предоставляем апартаменты в городке Аризона</h1>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"> <a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">О Седоне</a></li>
+        <li class="nav-item"><a class="nav-link nav-link--active">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <a href="index.html" class="logo-link"></a>
+    <a href="#" class="search-link"></a>
+    <a href="#" class="select"><img src="" alt="Ваши закладки."></a>
+    <button class="favorite" type="button">Хочу сюда</button>
+  </header>
+  <main class="inner-page">
+    <section class="hotels">
+      <h1 class="hotels-tilte">Гостиницы Седоны</h1>
+      <ul class="hotels-breadcrumb-list">
+        <li class="hotels-breadcrumb-item"><a href="index.html" class="hotels-breadcrumb-link">Главная страница</a></li>
+        <li class="hotels-breadcrumb-item"><a class="hotels-breadcrumb-link active">Гостиницы</a></li>
+      </ul>
+      <form class="hotels-form" action="" method="GET">
+        <fieldset class="hotels-infrastructure">
+          <legend>Инфраструктура:</legend>
+          <input id="pool-field" type="checkbox" checked>
+          <label for="pool-field">Бассейн</label>
+
+          <input id="parking-field" type="checkbox" checked>
+          <label for="parking-field">Парковка</label>
+
+          <input id="wifi-field" type="checkbox">
+          <label for="wifi-field">Wi-Fi</label>
+        </fieldset>
+
+        <fieldset class="hotels-type">
+          <legend>Тип жилья:</legend>
+
+          <input id="hotel-field" name="type-housing" type="radio" checked>
+          <label for="hotel-field">Гостиница</label>
+
+          <input id="motel-field" name="type-housing" type="radio">
+          <label for="motel-field">Мотель</label>
+
+          <input id="apartament-field" name="type-housing" type="radio">
+          <label for="apartament-field">Апартаменты</label>
+        </fieldset>
+
+        <fieldset class="hotels-price">
+          <legend>Стоимость, ₽:</legend>
+          <label for="price-min-field">от</label>
+          <input id="price-min-field" type="number" value="0">
+
+          <input id="price-max-field" type="number" value="9000">
+          <label for="price-max-field">до</label>
+        </fieldset>
+
+        <div class="bar">
+          <div class="toogle-min"></div>
+          <div class="toogle-max"></div>
+        </div>
+
+        <input type="submit" value="Применить">
+        <input type="reset" value="Сбросить">
+      </form>
+    </section>
+    <div class="find-result-header">
+      <h2 class="find-title">Найдено гостиниц: 38</h2>
+      <form action="" class="find-form" method="GET">
+        <select name="find-sort" id="">
+          <option value="min-price">Сначала дешевые</option>
+          <option value="max-price">Сначала дорогие</option>
+          <option value="popular">Популярные</option>
+        </select>
+      </form>
+      <button class="change-view-button change-view-button--1" type="button"></button>
+      <button class="change-view-button change-view-button--2" type="button"></button>
+      <button class="change-view-button change-view-button--3" type="button"></button>
+    </div>
+    <section class="find-result-search">
+      <h2 class="result-search-tile visually-hidden">Результат поиска.</h2>
+      <ul class="find-list">
+        <li class="find-item">
+          <a href="#" class="find-link">
+            <img src="" alt="Красивый вид с горы из гостиницы Amara Resort & Spa.">
+            <h4 class="find-item-title">Amara Resort & Spa</h4>
+          </a>
+          <p class="find-item-text-wrapper">
+            <b class="find-item-text">Гостиница</b>
+            <b class="find-item-price">От 4000₽</b>
+          </p>
+          <div class="find-button-wrapper">
+            <a href="#" class="button find-more-button">Подробнее</a>
+            <button type="button" class="button find-favorite-button">Избранное</button>
+            <button type="button" class="button raiting-button">Рейтинг: 8,5</button>
+          </div>
+        </li>
+        <li class="find-item">
+          <a href="#" class="find-link">
+            <img src="" alt="Одна из красивых мест в Седоне вид на каньон из мотеля Desert Quail Inn.">
+            <h4 class="find-item-title">Desert Quail Inn</h4>
+          </a>
+          <p class="find-item-text-wrapper">
+            <b class="find-item-text">Мотель</b>
+            <b class="find-item-price">От 3000₽</b>
+          </p>
+          <div class="find-button-wrapper">
+            <a href="#" class="button find-more-button">Подробнее</a>
+            <button type="button" class="button find-favorite-button">Избранное</button>
+            <button type="button" class="button raiting-button">Рейтинг: 8,9</button>
+          </div>
+        </li>
+        <li class="find-item">
+          <a href="#" class="find-link">
+            <img src="" alt="У нас самый демократичный цены на вилы в Седоне вид на гору Villas at Poco Diablo.">
+            <h4 class="find-item-title">Villas at Poco Diablo</h4>
+          </a>
+          <p class="find-item-text-wrapper">
+            <b class="find-item-text">Мотель</b>
+            <b class="find-item-price">От 2000₽</b>
+          </p>
+          <div class="find-button-wrapper">
+            <a href="#" class="button find-more-button">Подробнее</a>
+            <button type="button" class="button find-favorite-button favorite-button-active">В избранном</button>
+            <button type="button" class="button raiting-button">Рейтинг: 9,2</button>
+          </div>
+        </li>
+        <li class="find-item">
+          <a href="#" class="find-link">
+            <img src=""
+              alt="Вы у нас почувствуете контраст природы и пустыни да это возможно только у нас в гостиницы GreenTree Inn.">
+            <h4 class="find-item-title">GreenTree Inn</h4>
+          </a>
+          <p class="find-item-text-wrapper">
+            <b class="find-item-text">Гостиница</b>
+            <b class="find-item-price">От 3000₽</b>
+          </p>
+          <div class="find-button-wrapper">
+            <a href="#" class="button find-more-button">Подробнее</a>
+            <button type="button" class="button find-favorite-button favorite-button-active">Избранное</button>
+            <button type="button" class="button raiting-button">Рейтинг: 9,2</button>
+          </div>
+        </li>
+        <li class="find-item">
+          <button type="button" class="load-more-button">Загрузить еще</button>
+        </li>
+      </ul>
+    </section>
+    <section class="page">
+      <h2 class="page-title visually-hidden">Список страниц.</h2>
+      <ol class="page-list">
+        <li class="page-item"><a class="page-link page-link--active">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">...</a></li>
+        <li class="page-item"><a href="#" class="page-link">10</a></li>
+      </ol>
+      <form action="" method="GET">
+        <label for="hotel-on-page-field">Гостиниц на странице:</label>
+        <select name="hotels-on-page" id="hotel-on-page-field">
+          <option value="1">3</option>
+          <option value="1" selected>4</option>
+          <option value="1">5</option>
+          <option value="1">6</option>
+          <option value="1">7</option>
+          <option value="1">8</option>
+        </select>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="distribution">
+      <h2 class="distribution-title">Подпишитесь на рассылку</h2>
+      <p class="distribution-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="" method="POST">
+        <input id="distribution-field" type="email" placeholder="Ваш e-mail" required>
+        <input type="submit" value="Подписаться">
+      </form>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts-title visually-hidden">Наши контакты</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://twitter.com/htmlacademy_ru" class="social-link">
+            <img src="" alt="Твитер.">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.facebook.com/htmlacademy/" class="social-link">
+            <img src="" alt="Фейсбук.">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" class="social-link">
+            <img src="" alt="Ютуб.">
+          </a>
+        </li>
+      </ul>
+      <a class="contacts-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://up.htmlacademy.ru/" class="contacts-author-link">
+        <img src="" alt="htmlacademy Автор данного сайта">
+      </a>
+    </section>
+  </footer>
+</body>
+</html>
