@@ -105,16 +105,6 @@ body {
   margin-bottom: 65px;
 }
 
-.about::after {
-  position: absolute;
-  content: "";
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../img/header-background-arrow.png);
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 57px;
-}
 
 .about__title+img {
   margin: 0 auto;
@@ -364,7 +354,7 @@ body {
 
 
 /* inner-page */
-.hotels {
+.filter {
   width: 1200px;
   min-height: 408px;
   background: url(../img/catalog-sort-background.jpg);
@@ -373,12 +363,12 @@ body {
   padding: 35px 70px;
   box-sizing: border-box;
 }
-.hotels__title {
+.filter__title {
   font-size: 60px;
   margin: 0px;
   margin-bottom: 5px;
 }
-.hotels-breadcrumb-list {
+.filter-breadcrumb-list {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -386,11 +376,11 @@ body {
   display: flex;
   align-items: center;
 }
-.hotels__breadcrumb--item:first-child {
+.filter__breadcrumb--item:first-child {
   position: relative;
   padding-left: 35px;
 }
-.hotels__breadcrumb--item:first-child:before {
+.filter__breadcrumb--item:first-child:before {
   content: "";
   position: absolute;
   top: 3px;
@@ -400,7 +390,7 @@ body {
   background-image: url(../img/home-breadcrumb.svg);
   background-repeat: no-repeat;
 }
-.hotels__breadcrumb--item:first-child:after {
+.filter__breadcrumb--item:first-child:after {
   content: "";
   position: absolute;
   top: 6px;
@@ -409,47 +399,47 @@ body {
   height: 8px;
   background-image: url(../img/arrow-breadcrumb.svg);
 }
-.hotels-form {
+.filter-form {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
   min-height: 150px;
 }
-.hotels-form--fieldset {
+.filter-form--fieldset {
   border: none;
   padding: 0;
 }
-.hotels-form--legend {
+.filter-form--legend {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.hotels__infrastructure {
+.filter__infrastructure {
   column-gap: 65px;
 }
-.hotels-list {
+.filter-list {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-.hotels-item  label{
+.filter-item  label{
   font-size: 18px;
   padding-left: 20px;
 }
-.hotels-form--fieldset  input{
+.filter-form--fieldset  input{
   color: #fff;
   border: 2px #fff solid;
   padding: 19px 11px ;
   background: transparent;
   border-radius: 4px;
 }
-.hotels-button-wrapper {
+.filter-button-wrapper {
   display: flex;
   flex-direction: column;
   align-self: center;
   width: 160px;
   padding-top: 55px;
 }
-.hotels-form__submit {
+.filter-form__submit {
   border-radius: 4px;
   border: none;
   background: #83B3D3;
@@ -458,7 +448,7 @@ body {
   width: 160px;
   min-height: 48px;
 }
-.hotels-form__reset {
+.filter-form__reset {
   border: none;
   border-radius: 4px;
   background: transparent;

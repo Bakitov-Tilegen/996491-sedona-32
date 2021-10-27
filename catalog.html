@@ -29,48 +29,48 @@
     </div>
   </header>
   <main class="inner-page">
-    <section class="hotels">
-      <h1 class="hotels__title">Гостиницы Седоны</h1>
-      <ul class="hotels-breadcrumb-list">
-        <li class="hotels__breadcrumb--item"><a class="hotels__breadcrumb--link active">Гостиницы</a></li>
+    <section class="filter">
+      <h1 class="filter__title">Гостиницы Седоны</h1>
+      <ul class="filter-breadcrumb-list">
+        <li class="filter__breadcrumb--item"><a class="filter__breadcrumb--link active">Гостиницы</a></li>
       </ul>
-      <form class="hotels-form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="hotels__infrastructure hotels-form--fieldset">
-          <legend class="hotels-form--legend">Инфраструктура:</legend>
-          <ul class="infrastructure-list hotels-list">
-            <li class="infrastructure__item hotels-item">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="filter__infrastructure filter-form--fieldset">
+          <legend class="filter-form--legend">Инфраструктура:</legend>
+          <ul class="infrastructure-list filter-list">
+            <li class="infrastructure__item filter-item">
               <input id="pool-field" type="checkbox" checked>
               <label for="pool-field">Бассейн</label>
             </li>
-            <li class="infrastructure__item hotels-item">
+            <li class="infrastructure__item filter-item">
               <input id="parking-field" type="checkbox" checked>
               <label for="parking-field">Парковка</label>
             </li>
-            <li class="infrastructure__item hotels-item">
+            <li class="infrastructure__item filter-item">
               <input id="wifi-field" type="checkbox">
               <label for="wifi-field">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="hotels__type hotels-form--fieldset">
-          <legend class="hotels-form--legend">Тип жилья:</legend>
-          <ul class="type-list hotels-list">
-            <li class="type__item hotels-item">
+        <fieldset class="filter__type filter-form--fieldset">
+          <legend class="filter-form--legend">Тип жилья:</legend>
+          <ul class="type-list filter-list">
+            <li class="type__item filter-item">
               <input id="hotel-field" name="type-housing" type="radio" checked>
               <label for="hotel-field">Гостиница</label>
             </li>
-            <li class="type__item hotels-item">
+            <li class="type__item filter-item">
               <input id="motel-field" name="type-housing" type="radio">
               <label for="motel-field">Мотель</label>
             </li>
-            <li class="type__item hotels-item">
+            <li class="type__item filter-item">
               <input id="apartament-field" name="type-housing" type="radio">
               <label for="apartament-field">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="hotels__price hotels-form--fieldset">
-          <legend class="hotels-form--legend">Стоимость, ₽:</legend>
+        <fieldset class="filter__price filter-form--fieldset">
+          <legend class="filter-form--legend">Стоимость, ₽:</legend>
           <input id="price-min-field" type="number" value="0">
           <label for="price-min-field">от</label>
           <input id="price-max-field" type="number" value="9000">
@@ -80,9 +80,9 @@
             <div class="toogle__max"></div>
           </div>
         </fieldset>
-        <div class="hotels-button-wrapper">
-          <input class="hotels-form__submit" type="submit" value="Применить">
-          <input class="hotels-form__reset" type="reset" value="Сбросить">
+        <div class="filter-button-wrapper">
+          <input class="filter-form__submit" type="submit" value="Применить">
+          <input class="filter-form__reset" type="reset" value="Сбросить">
         </div>
       </form>
     </section>
