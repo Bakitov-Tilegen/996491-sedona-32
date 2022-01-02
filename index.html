@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="../996491-sedona-32/js/main.js"></script>
 </head>
 
 <body>
@@ -12,20 +13,16 @@
     <h1 class="visually-hidden">Мы предоставляем апартаменты в городке Аризона</h1>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav__item"> <a class="nav__link nav__link--active">Главная</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">О Седоне</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link">Гостиницы</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link">Гостиницы</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link">Гостиницы</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link">Гостиницы</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--active">Главная</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" >О Седоне</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link" >Гостиницы</a></li>
       </ul>
     </nav>
     <a href="index.html" class="logo__link"><img src="img/logo-sedona.svg" alt="Логотип Седоны." width="140"
         height="70"></a>
     <div class="header-button">
-      <a href="#" class="search__link"><img src="img/logo-search.svg" alt="Поиск по странице." width="18"
-          height="18"></a>
-      <a href="#" class="select__link"><img src="img/logo-favorite.svg" alt="Ваши закладки." width="18" height="17"></a>
+      <a href="#" class="search__link"><svg class="search__link--svg" width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 18"><g clip-path="url(#a)"><path d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/></g></svg></a>
+      <a href="#" class="select__link"><svg class="search__link--svg" width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 17"><path d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg></a>
       <div class="popup-favorite">
         <ul class="favorite-list">
           <li class="favorite-item">
@@ -33,19 +30,39 @@
             <h2 class="favorite-item__title desert-title">Desert Quail Inn</h2>
             <span class="favorite-item__text">Мотель</span>
             </a>
+            <button type="button" class="favorite-item__trash">
+              <svg class="trash-svg" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.70001C6.8001 5.40001 6.5001 5.10001 6.2001 5.10001C5.9001 5.10001 5.6001 5.40001 5.6001 5.70001V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.70001C10.3001 5.40001 10.0001 5.10001 9.7001 5.10001C9.4001 5.10001 9.1001 5.50001 9.1001 5.70001V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                </g>
+                </svg>
+            </button>
           </li>
           <li class="favorite-item">
             <a href="#" class="favorite-item__link">
             <h2 class="favorite-item__title villas-title">Villas at Poco Diablo</h2>
             <span class="favorite-item__text">Апартаменты</span>
             </a>
+            <button type="button" class="favorite-item__trash">
+              <svg class="trash-svg" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2">
+                <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.70001C6.8001 5.40001 6.5001 5.10001 6.2001 5.10001C5.9001 5.10001 5.6001 5.40001 5.6001 5.70001V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.70001C10.3001 5.40001 10.0001 5.10001 9.7001 5.10001C9.4001 5.10001 9.1001 5.50001 9.1001 5.70001V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                </g>
+                </svg>
+            </button>
           </li>
           <li class="favorite-item">
-            <a href="#" class="favorite-link">Все Избранные</a>
+            <a href="#" class="favorite-link button--brown">Все Избранные</a>
           </li>
         </ul>
       </div>
-      <a href="#" class="favorite__link button">Хочу сюда!</a>
+      <a href="#" class="favorite__link button button--brown">Хочу сюда!</a>
     </div>
   </header>
   <main>
@@ -72,15 +89,15 @@
       <ul class="description-list">
         <li class="description__item description__item--house">
           <h3 class="description__item--title">Жильё</h3>
-          <p class="description__item--text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <p class="description__item--text">Рекомендуем пожить, <br> в настоящем мотеле, <br> всё как в кино!</p>
         </li>
         <li class="description__item description__item--food">
           <h3 class="description__item--title">Еда</h3>
-          <p class="description__item--text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="description__item--text">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
         </li>
         <li class="description__item description__item--present">
           <h3 class="description__item--title">Сувениры</h3>
-          <p class="description__item--text">Не только китайского, но и настоящего местного производства!</p>
+          <p class="description__item--text">Не только китайского, <br> но и настоящего местного <br> производства!</p>
         </li>
       </ul>
       <div class="description-wrapper description--bridge">
@@ -112,9 +129,9 @@
     </section>
     <section class="interested">
       <h2 class="interested__title">Заинтересовались?</h2>
-      <p class="interested__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="interested__text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <button type="button" class="button interested__search__button">Поиск гостиницы в седоне</button>
+      <button type="button" class="button interested__search__button button--brown">Поиск гостиницы в седоне</button>
     </section>
     <div class="popup-search">
       <h2 class="popup-search__title">Поиск Гостиницы в Седоне</h2>
@@ -127,19 +144,23 @@
         <input id="depature-id" type="date" class="search-form__input" value="2020-09-01" required>
         <span class="search-form__input--booking">На эти даты есть свободные номера. Пока есть.</span>
         <label for="older-id" class="search-form__label older-label">Взрослые:</label>
+
         <input id="older-id" type="number" class="search-form__input older-input" min="1" max="10" value="2" required>
+
         <label for="younger-id" class="search-form__label younger-label"
           title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">Дети:</label>
+
         <input id="younger-id" type="number" class="search-form__input younger-input" min="0" max="10" value="1">
-        <input class="search-form__submit" type="submit" value="Найти">
+
+        <input class="search-form__submit button--blue" type="submit" value="Найти">
       </form>
     </div>
     <section class="distribution">
       <h2 class="distribution__title">Подпишитесь на рассылку</h2>
-      <p class="distribution__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="distribution__text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru" method="POST">
         <input class="distribution-form__email" id="distribution__field" type="email" placeholder="Ваш e-mail" required>
-        <input class="distribution-form__submit" type="submit" value="Подписаться">
+        <input class="distribution-form__submit button--blue" type="submit" value="Подписаться">
       </form>
     </section>
   </main>
@@ -149,26 +170,47 @@
       <ul class="social-list">
         <li class="social__item">
           <a href="https://twitter.com/htmlacademy_ru" class="social__link">
-            <img src="img/social-twitter.svg" alt="Твитер." width="18" height="15">
+            <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v15H0z"/></clipPath></defs></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="https://www.facebook.com/htmlacademy/" class="social__link">
-            <img src="img/social-facebook.svg" alt="Фейсбук." width="10" height="18">
+            <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" class="social__link">
-            <img src="img/social-youtube.svg" alt="Ютуб." width="20" height="16">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_13_978)">
+              <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_13_978">
+              <rect width="20" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
           </a>
         </li>
       </ul>
       <a class="contacts__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://up.htmlacademy.ru/" class="contacts__author--link">
-        <img src="img/logo-htmlacademy.svg" alt="htmlacademy Автор данного сайта." width="115" height="35">
+        <svg width="115" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="#000"/></svg>
       </a>
     </section>
   </footer>
+  <div class="popup">
+    <div class="popup__body">
+    <div class="popup__content">
+      <a class="popup__close"></a>
+      <div class="popup__title">Title N1</div>
+      <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolor nam officiis rerum at molestiae vitae veniam, soluta libero nobis, voluptatum amet distinctio ratione assumenda hic voluptates ut.
+        Numquam, possimus quia.
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>
